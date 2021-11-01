@@ -59,6 +59,7 @@ html, body {
 }
 .navbar li {
   list-style: none;
+  font-size: 1.2rem;
 }
 .navbar a {
   text-decoration: none;
@@ -75,21 +76,32 @@ html, body {
 }
 .showcaseInfo {
   width: 690px;
+  height: 341px;
   margin-left: 5rem ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .showcaseInfo h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 400;
-  margin-bottom: 2rem;
+  /* padding: 0 2rem; */
 }
 .showcaseInfo p {
-  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+.showcaseInfo button {
+  /* padding: 2rem; */
 }
 .btn {
-  padding: 1rem 3rem;
+  /* display: inline; */
+  /* padding: 1rem 3rem; */
   border: 1px solid transparent;
   border-radius: 10px;
   cursor: pointer;
+  height: 58px;
+  width: 240px ;
+  /* position: absolute; */
 
 }
 .btn-primary {
@@ -99,5 +111,10 @@ html, body {
   font-weight: bold;
 }
 .btn:hover {
+  
   background-color: #2BAAEC ;
+  width: 239px;
+  height: 60px;
+  transition: width .2s, height .2s;
+  transition-timing-function: ease-in;
 }
