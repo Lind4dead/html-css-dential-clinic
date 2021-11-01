@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#top-container {
+  border: 1px solid #707070 ;
+}
+.container {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  padding: 1rem;
+}
+.top-menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.clock {
+  display: flex;
+  font-size: 1rem;
+}
+.clock img {
+  margin-right: .7rem;
+}
+.clock p {
+  color: #626262;
+}
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.social-media li {
+  list-style: none;
+}
+.social-media a {
+  text-decoration: none;
+  color: #2BAAEC ;
+}
+
+.social-media a:hover {
+  color: #25E6C8;
+}
+.main-menu {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.navbar li {
+  list-style: none;
+}
+.navbar a {
+  text-decoration: none;
+  color: #363636 ; 
+}
+#showcase {
+  background-color:#DEDEDE ;
+  height: 696px;
+}
+#showcase .container {
+  justify-content: center;
+  align-items: center;
+  
+}
+.showcaseInfo {
+  width: 690px;
+  margin-left: 5rem ;
+}
+.showcaseInfo h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.showcaseInfo p {
+  margin-bottom: 2rem;
+}
+.btn {
+  padding: 1rem 3rem;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+.btn-primary {
+  background-color:#25e6c8 ;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: #2BAAEC ;
+}
