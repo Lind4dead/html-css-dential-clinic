@@ -1,4 +1,19 @@
-* {
+:root {
+  --blue-color: #2baaec; 
+  --blue-color-low-opacity: #2ba8ec49; 
+  --blue-color-80-opacity: #2ba8ecc5; 
+  --green-color: #25e6c8;
+  --title-color: #363636;
+  --text-color: #626262;
+  --placehold-color: #dedede;
+  --bg-color: #f7f7f7;
+  --bg-dark: #163c70;
+  --outline-color: #d2d2d2;
+  --txt-footer-color: #f3fbff;
+  --placehold2-color: #bfbfbf;
+}
+
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,6 +29,13 @@ h2 {
  font-size: 2.7rem;
  font-weight: 400;
 }
+h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+}
 .pb-0 {
   padding-bottom: 0 !important;
 }
@@ -26,6 +48,8 @@ h2 {
   margin: auto;
   padding: 1rem;
 }
+
+/* Top menu START */
 .top-menu {
   display: flex;
   width: 100%;
@@ -51,12 +75,14 @@ h2 {
 }
 .social-media a {
   text-decoration: none;
-  color: #2BAAEC ;
+  color: var(--blue-color) ;
 }
 
 .social-media a:hover {
-  color: #25E6C8;
+  color: var(--green-color);
 }
+/* Top Menu END */
+/* Nav START */
 .main-menu {
   width: 100%;
   padding: 2rem 0;
@@ -74,10 +100,12 @@ h2 {
 }
 .navbar a {
   text-decoration: none;
-  color: #363636 ; 
+  color: var(--title-color) ; 
 }
+/* Nav END */
+/* Showcase START */
 #showcase {
-  background-color:#DEDEDE ;
+  background-color:var(--placehold-color) ;
   height: 700px;
   width: 100%;
   padding-top: 2rem;
@@ -85,13 +113,9 @@ h2 {
   justify-content: center;
   /* align-items: center; */
 }
-#showcase img {
-  
-}
 .infoCont {
   display: flex;
   align-items: center;
-  
 }
 .showcaseInfo {
   width: 690px;
@@ -102,43 +126,38 @@ h2 {
   justify-content: space-between;
 }
 .showcaseInfo h1 {
-  /* font-size: 4rem; */
   font-weight: 400;
-  /* padding: 0 2rem; */
+  
 }
 .showcaseInfo p {
-  font-size: 1.2rem;
-}
-.showcaseInfo button {
-  /* padding: 2rem; */
+  font-size: 1.1rem;
 }
 .btn {
-  /* display: inline; */
-  /* padding: 1rem 3rem; */
+  padding: 1.1rem;
   border: 1px solid transparent;
   border-radius: 10px;
   cursor: pointer;
-  height: 58px;
   width: 240px ;
-  /* position: absolute; */
-
+  
 }
 .btn-primary {
-  background-color:#25e6c8 ;
+  background-color:var(--green-color) ;
   color: #FFFFFF;
   font-size: 18px;
   font-weight: bold;
 }
 .btn:hover {
   
-  background-color: #2BAAEC ;
+  background-color: var(--blue-color) ;
   width: 239px;
   height: 60px;
+
   transition: width .2s, height .2s;
   transition-timing-function: ease-in;
 }
+/* Showcase END */
+/* About us START */
 .about-us-cont {
-  width: 85%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,11 +174,10 @@ h2 {
   
 }
 .header-about {
-  /* padding-bottom: 1rem; */
   width: 570px;
 }
 .header-border {
-  border-bottom: 4px solid #25E6C8;
+  border-bottom: 4px solid var(--green-color);
   width: 705px;
 }
 .stats {
@@ -175,5 +193,116 @@ h2 {
   margin-bottom: 1rem;
 }
 .color-primary {
-  color: #2BAAEC;
+  color: var(--blue-color);
 }
+.text p {
+  font-size: 1.1rem;
+}
+/* About us END */
+/* Services START */
+.grid-container {
+  background-color:var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+}
+.grid-container .header-border {
+  width: 450px;
+}
+.grid-container h2 {
+  margin-bottom: 1.3rem;
+}
+.grid-wrapper {
+  display: grid;
+  width: 80%;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 2fr));
+  grid-auto-rows: minmax(430px, auto);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.item {
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: .7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+.circle {
+  background-color: var(--green-color);
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.item p {
+  
+  color: #626262;
+  margin: 0;
+  font-size: 1.1rem;
+  width: 300px;
+}
+.item h3 {
+  color: #363636 ;
+}
+.item:hover {
+  box-shadow: 0 0 15px 1px #0000000a;
+  transition: box-shadow .3s;
+  transition-timing-function: ease-in-out;
+}
+.item:hover .circle {
+  background-color: var(--blue-color);
+  box-shadow: 0 0 1px 10px var(--blue-color-low-opacity);
+  transition: background-color .3s, box-shadow .3s;
+  transition-timing-function: ease-in-out;
+}
+  /* Services END */
+ /* Appointment START */
+ #appointment {
+   background-color: var(--blue-color-80-opacity);
+   color: #fff ;
+   padding: 4rem 0;
+ } 
+ .btn-appointment {
+  padding: 1rem;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  /* height: 58px; */
+  width: 285px ;
+  background-color: #FFF ;
+  color: var(--blue-color-80-opacity);
+  font-size: 18px;
+  font-weight: bold;
+ }
+ #appointment .container {
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 3rem;
+ }
+ .btn-appointment:hover {
+   border: 1px solid #fff;
+   background-color: var(--blue-color-80-opacity);
+   color: #fff;
+   transition: background-color .2s, color .2s;
+   transition-timing-function: ease-in-out;
+ }
+ /* Appointment END */
+
+ /* Footer START */
+ #footer {
+   background-color: var(--blue-color);
+   color: #ffffff91;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 2rem;
+ }
