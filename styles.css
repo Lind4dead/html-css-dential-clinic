@@ -137,7 +137,8 @@ li {
 /* Showcase START */
 #showcase {
 
-  width: 100%;
+  width: auto;
+  height: auto;
   padding-top: 2rem;
   display: flex;
   justify-content: space-around;
@@ -148,17 +149,20 @@ li {
 
 .infoCont {
   display: flex;
-  width: 40%;
-  height: 341px;
+  width: auto;
+  height: auto;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .showcaseInfo {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: auto;
+  padding: 0 6rem;
+  gap: 2rem;
+
 }
 
 .btn {
@@ -187,7 +191,6 @@ li {
 /* About us START */
 .about-us-cont {
   display: flex;
-  /* height: 90vh; */
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
@@ -196,10 +199,10 @@ li {
 
 .about-us {
   display: flex;
-  width: 50%;
-  height: 80%;
+  width: 60%;
+  height: 60%;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
  
   
 }
@@ -225,18 +228,14 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 80%;
-  height: 35%;
+  width: auto;
+  height: auto;
 }
 #textMarg {
-  /* margin-bottom: 1rem; */
+  margin-bottom: 1rem;
 }
 .color-primary {
   color: var(--blue-color);
-}
-.text p {
-  font-size: 1.1rem;
-  display: inline-block;
 }
   #stat1 {
     display: inline-block;
@@ -257,7 +256,7 @@ li {
   padding: 5rem;
 }
 .grid-container .header-border {
-  width: 450px;
+  width: 40%;
 }
 .grid-container h2 {
   margin-bottom: 1.3rem;
@@ -266,8 +265,8 @@ li {
   display: grid;
   width: 100%;
   justify-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(auto, 30%));
-  grid-auto-rows: minmax(30%, 100%);
+  grid-template-columns: repeat(auto-fill, minmax(430px, 30%));
+  grid-auto-rows: minmax(450px, 100%);
   gap: 2rem;
   margin-top: 3rem;
 }
@@ -280,6 +279,7 @@ li {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 1rem;
   
 }
 .circle {
@@ -303,15 +303,15 @@ li {
   color: var(--title-color) ;
 }
 .item:hover {
-  box-shadow: 0 0 15px 1px #0000000a;
+  box-shadow: 0 0 10px 1px #0000000a;
   transition: box-shadow .3s;
-  transition-timing-function: ease-in-out;
+  transition-timing-function: ease-out;
 }
 .item:hover .circle {
   background-color: var(--blue-color);
   box-shadow: 0 0 1px 10px var(--blue-color-low-opacity);
   transition: background-color .3s, box-shadow .3s;
-  transition-timing-function: ease-in-out;
+  transition-timing-function: ease-out;
 }
   /* Services END */
 
@@ -380,53 +380,39 @@ li {
     font-size: 1.6rem;
    }
    p {
-     font-size: 1.2rem;
+     font-size: 1rem;
    }
    .container {
-     width: 90%;
+     width: 85%;
    }
    /* Top-menu START */
-   .top-menu {
-     height: auto;
-     justify-content: space-between;
-   }
+
    .clock {
-     width: 60%;
-    height: auto;
+     width: auto;
   }
-  .social-media {
-    width: 15%;
-    justify-content:space-between;
-  }
+
   /* Top-menu END */
  
    .navbar {
-     margin-top: 1.5rem;
-     width: 50%;
-     justify-content: space-around;
+     width: 40%;
     }
 
     /* Showcase START */
-    /* .bg-ph-color {
-      background-image: url(img/placehold1.png);
-      background-repeat: no-repeat;
-  } */
-  #showcase {
-     padding-bottom: 2rem;
-     width: 70% ;
-     
+    
+    #showcase {
+      width: auto ;    
+    }  
+    .infoCont {
+      width: auto;
+      height: auto;
     }
-   /* #showcase img {
-     display: none;
-   } */
-   
    .showcaseInfo {
      justify-content: space-around;
      height: auto;
-     /* width: auto; */
      align-items: center;
      text-align: center;
-     width: 100%;
+     width: auto;
+     padding: 0;
     }
     .showcaseInfo h1 {
       margin-bottom: 1rem;
@@ -437,76 +423,41 @@ li {
     /* Showcase END */
     
     /* About us START */
-    .about-us-cont {
-      background-image: url(img/placehold2.png);
-      background-repeat: no-repeat;
-      height: auto;
-    }
-    .about-us-cont img {
-      display: none;
-    }
+
     .about-us {
-      width: 90%;
+      width: auto;
       height: auto;
-      text-align: center;
-      align-items: center;
-    }
-    .infoCont {
-      width: 100%;
-      height: auto;
+      justify-content: space-evenly;
+      
     }
     .header-about {
       width: 100%;
-      margin-bottom: 1rem;
+      margin-bottom: .5rem;
       
     }
     .stats {
      margin: 1rem 0;
-     height: auto;
     }
     .text {
       margin-top: 1rem;
     }
-    #textMarg {
-      margin-bottom: 1rem;
-    }
     /* About us END */
     /* Services START */
-    .grid-container {
-      height: auto;
-      flex-direction: column;
-      align-items: center;
-    }
-    .grid-container .header-border {
-      width: 100%;
-    }
-    .grid-container h2 {
-      margin-bottom: 1.3rem;
-    }
     .grid-wrapper {
       grid-template-columns: repeat(auto-fill, minmax(auto, 40%));
       grid-auto-rows: minmax(auto, auto);
-      height: auto;
-    }
-    .item {
-      padding: 1rem;
     }
     .item p {
       padding: .5rem;
-      font-size: .7rem;
       width: auto;
     }
     /* Services END */
+
     /* Appointment START */
-    #appointment {
-      padding: 2rem 0;
-    }
-    #appointment .container {
-      flex-direction: column;
-    }
     .btn-appointment {
       margin-top: 2rem;
     }
+    /* Appointment END */
   }
 
 
@@ -518,7 +469,7 @@ li {
     font-size: 1.825rem;
   }
    h3 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
    }
    p {
      font-size: 1rem;
@@ -526,55 +477,28 @@ li {
    .container {
      width: 90%;
    }
-   /* Top-menu START */
-   .top-menu {
-     height: auto;
-     justify-content: space-between;
-   }
-   .clock {
-     width: 60%;
-    height: auto;
-  }
-  .social-media {
-    width: 15%;
-    justify-content:space-between;
-  }
-  /* Top-menu END */
- 
-   .navbar {
-     margin-top: 1.5rem;
+
+    /*Main Menu START  */
+    .navbar {
      width: 50%;
      justify-content: space-around;
     }
-
+    /* Main Menu END */
     /* Showcase START */
     .bg-ph-color {
       background-image: url(img/placehold1.png);
       background-repeat: no-repeat;
-      /* height: 400px; */
-  }
-  #showcase {
-     padding-bottom: 2rem;
-     width: 70% ;
+    }
+    #showcase {
+     padding: 3rem 0;
      
     }
-   #showcase img {
-     display: none;
-   }
-   
-   .showcaseInfo {
-     justify-content: space-around;
-     height: auto;
-     /* width: auto; */
-     align-items: center;
-     text-align: center;
-     width: 100%;
+    #showcase img {
+      display: none;
     }
-    .showcaseInfo h1 {
-      margin-bottom: 1rem;
-    }
-    .btn {
-      margin-top: 2rem;
+    .infoCont {
+      width: 100%;
+      height: auto;
     }
     /* Showcase END */
     
@@ -583,60 +507,18 @@ li {
       background-image: url(img/placehold2.png);
       background-repeat: no-repeat;
       height: auto;
+      padding: 2rem 0;
     }
     .about-us-cont img {
       display: none;
     }
-    .about-us {
-      width: 90%;
-      height: auto;
-      text-align: center;
-      align-items: center;
-    }
-    .infoCont {
-      width: 100%;
-      height: auto;
-    }
-    .header-about {
-      width: 100%;
-      margin-bottom: 1rem;
-      
-    }
-    .stats {
-     margin: 1rem 0;
-     height: auto;
-    }
-    .text {
-      margin-top: 1rem;
-    }
-    #textMarg {
-      margin-bottom: 1rem;
-    }
     /* About us END */
     /* Services START */
     .grid-container {
-      height: auto;
-      flex-direction: column;
-      align-items: center;
-    }
-    .grid-container .header-border {
-      width: 100%;
-    }
-    .grid-container h2 {
-      margin-bottom: 1.3rem;
-    }
-    .grid-wrapper {
-      grid-template-columns: repeat(auto-fill, minmax(auto, 40%));
-      grid-auto-rows: minmax(auto, auto);
-      height: auto;
-    }
-    .item {
-      padding: 1rem;
+      padding: 3rem;
     }
     .item p {
-      padding: .5rem;
-      font-size: .7rem;
-      width: auto;
+      font-size: 1rem;
     }
     /* Services END */
     /* Appointment START */
@@ -645,9 +527,6 @@ li {
     }
     #appointment .container {
       flex-direction: column;
-    }
-    .btn-appointment {
-      margin-top: 2rem;
     }
   }
 
@@ -660,136 +539,27 @@ li {
     font-size: 1.625rem;
   }
    h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
    }
    p {
      font-size: .9rem;
    }
    /* Top-menu START */
-   /* .top-menu {
-     height: auto;
-     justify-content: space-between;
-   }
-   .clock {
-     width: 60%;
-    height: auto;
-  } */
-  /* .social-media {
-    width: 25%;
-    justify-content:space-between;
-  } */
+ 
   /* Top-menu END */
    .main-menu {
-     width: 100%;
      padding: 2rem 0;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
   }
    .navbar {
-     margin-top: 1.5rem;
      width: 100%;
      justify-content: space-between;
     }
 
-    /* Showcase START */
-    /* .bg-ph-color {
-      background-image: url(img/placehold1.png);
-    background-repeat: no-repeat;
-  } */
-  #showcase {
-     padding-bottom: 2rem;
-     width: auto;
-     
-    }
-   /* #showcase img {
-     display: none;
-   } */
-   
-   .showcaseInfo {
-     justify-content: space-around;
-     height: auto;
-     width: auto;
-     align-items: center;
-     text-align: center;
-     width: 100%;
-    }
-    .showcaseInfo h1 {
-      margin-bottom: 1rem;
-    }
-    .btn {
-      margin-top: 2rem;
-    }
-    /* Showcase END */
-    
-    /* About us START */
-    .about-us-cont {
-      background-image: url(img/placehold2.png);
-      background-repeat: no-repeat;
-      height: auto;
-    }
-    .about-us-cont img {
-      display: none;
-    }
-    .about-us {
-      width: 90%;
-      height: auto;
-      text-align: center;
-      align-items: center;
-    }
-    .infoCont {
-      width: 100%;
-      height: auto;
-    }
-    .header-about {
-      width: 100%;
-      margin-bottom: 1rem;
-      
-    }
-    .stats {
-     margin: 1rem 0;
-     height: auto;
-    }
-    .text {
-      margin-top: 1rem;
-    }
-    #textMarg {
-      margin-bottom: 1rem;
-    }
-    /* About us END */
-    /* Services START */
-    .grid-container {
-      height: auto;
-      flex-direction: column;
-      align-items: center;
-    }
-    .grid-container .header-border {
-      width: 100%;
-    }
-    .grid-container h2 {
-      margin-bottom: 1.3rem;
-    }
-    .grid-wrapper {
-      grid-template-columns: repeat(auto-fill, minmax(auto, 40%));
-      grid-auto-rows: minmax(auto, auto);
-      height: auto;
-    }
-    .item p {
-      padding: .5rem;
-      font-size: .7rem;
-      width: auto;
-    }
-    /* Services END */
-    /* Appointment START */
-    #appointment {
-      padding: 2rem 0;
-    }
-    #appointment .container {
-      flex-direction: column;
-    }
-    .btn-appointment {
-      margin-top: 2rem;
-    }
+
+  
+
   }
   
   @media (max-width: 575.98px) {
@@ -800,7 +570,7 @@ li {
      font-size: 1.4rem;
     }
     h3 {
-     font-size: 1rem;
+     font-size: 1.1rem;
     }
     p {
       font-size: .8rem;
@@ -814,60 +584,26 @@ li {
     }
     /* Top-menu START */
     .top-menu {
-      height: auto;
       justify-content: space-around;
       align-items: center;
     }
-    .clock {
-     width: 60%;
-     height: auto;
-   }
    .social-media {
      width: 20%;
-     justify-content:space-between;
    }
    /* Top-menu END */
+   /* Main menu START */
     .main-menu {
-     width: 100%;
-     padding: 2rem 0;
-     /* display: flex; */
-     flex-direction: column;
      justify-content: space-around;
-     align-items: center;
    }
     .navbar {
-      margin-top: 1.5rem;
-      width: 100%;
      justify-content: space-around;
     }
  
     /* Showcase START */
-    .bg-ph-color {
-     background-image: url(img/placehold1.png);
-     background-repeat: no-repeat;
-    }
-    #showcase {
-      padding-bottom: 2rem;
-      
-    }
-    #showcase img {
-     display: none;
-    }
+  
     
     .showcaseInfo {
-      justify-content: space-around;
-      height: auto;
-      width: auto;
-      align-items: center;
-       text-align: center;
-       width: 100%;
        padding: 0 1rem;
-     }
-     .showcaseInfo h1 {
-       margin-bottom: 1rem;
-     }
-     .btn {
-       margin-top: 2rem;
      }
      /* Showcase END */
  
@@ -875,30 +611,14 @@ li {
      .about-us-cont {
        background-image: url(img/placehold2.png);
        background-repeat: no-repeat;
-       height: auto;
-       width: 100%;
+      
      }
-     .about-us-cont img {
-       display: none;
-     }
-     .about-us {
-       width: 100%;
-       height: auto;
-       text-align: center;
-       align-items: center;
-     }
-     .infoCont {
-       width: 100%;
-       height: auto;
-      }
       .header-about {
        width: 100%;
-       margin-bottom: 1rem;
-       
+       margin-bottom: 1rem;     
      }
      .stats {
       margin: 2rem 0;
-      height: auto;
      }
      .text {
        margin-top: 1rem;
@@ -908,38 +628,24 @@ li {
      }
      /* About us END */
      /* Services START */
-     .grid-container {
-       height: auto;
-       flex-direction: column;
-       align-items: center;
-       padding: 0;
-      }
       .grid-container .header-border {
         width: 80%;
       }
       .grid-container h2 {
-        margin: 1.3rem 0;
+        margin: 1.3rem;
         
       }
       .grid-wrapper {
         grid-template-columns: minmax(50px, 60%);
         grid-auto-rows: minmax(auto, auto);
-        height: auto;
         margin-bottom: 2rem;
      }
      .item p {
-       padding: .5rem;
-       font-size: .7rem;
-       width: auto;
+       font-size: .8rem;
      }
      /* Services END */
      /* Appointment START */
-     #appointment .container {
-       flex-direction: column;
-       padding: 0;
-     }
-     .btn-appointment {
-       margin-top: 2rem;
-     }
+
+
      /* Appointment END */
    }
