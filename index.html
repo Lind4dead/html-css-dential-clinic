@@ -7,16 +7,17 @@
   <title>Dential Clinic</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
   <!-- Top menu START -->
   <div id="top-container">
 
-    <div class="container">
+    <div class="container pub-1">
       <div class="top-menu">
         <div class="clock">
           <img src="img/clock icon.svg" alt="">
-          <p>Working hours: Mondag - Friday: 9:00 - 18:00</p>
+          <p class="title color">Working hours: Mondag - Friday: 9:00 - 18:00</p>
         </div>
         <ul class="social-media">
           <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -29,45 +30,47 @@
 </div>
 <!-- Top menu END -->
 <!-- Main menu START -->
-  <nav class="container">
+  <div class="container">
 
-    <div class="main-menu">
+    <nav class="main-menu">
       <a href="#"><img src="img/Logo.png" alt=""></a>
-      <ul class="navbar">
+      <ul class="navbar title-color">
         <li><a href="#">Home</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </div>
 <!-- Main menu END -->
 <!-- Showcase START -->
-  <div id="showcase">
-      <img src="img/placehold1.png" alt="">
-
-      <div class="infoCont">
-        <div class="showcaseInfo">
-          <h1>Modern technologies ensure safety</h1>
-          <p>Our clinic is equipped with the highest quality medical and dental equipment,
-            which allows for quick and effective treatment of the patient.</p>
+  <section class="bg-ph-color">
+    <div class="container mb-5">
+      <div id="showcase">
+        <img src="img/placehold1.png" alt="">
+        <div class="infoCont">
+          <div class="showcaseInfo">
+            <h1 class="title-color">Modern technologies ensure safety</h1>
+            <p class="title-color">Our clinic is equipped with the highest quality medical and dental equipment, which allows for quick and effective treatment of the patient.</p>
             <button class="btn btn-primary">About our clinic</button>
           </div>
         </div> 
-  </div>
+      </div>
+    </div>
+  </section>
 <!-- Showcase END -->
 <!-- About us START -->
 
   <div class="container">
     <div class="about-us-cont">
       <div class="about-us">
-        <h2 class="header-about">Dential<span class="color-primary">Clinic</span> is a modern medical and dental clinic</h2>
+        <h2 class="header-about title-color">Dential<span class="color-primary">Clinic</span> is a modern medical and dental clinic</h2>
         <div class="header-border"></div>
-          <div class="text">
+        <div class="text title-color">
             <p id="textMarg">The DentialClinic Center located in the city of Stockholm is one of the most modern dentistry centers in Sweden. It was created for demanding patients who expect the highest quality of services combined with comfort and a pleasant atmosphere.</p>
             <p>The highest-class dental equipment possessed by the DentialClinic Center enables complicated procedures to be carried out. In our dental practice we combine passion, technology and quality. We strive to fulfill your dreams of a wonderful smile.</p>
-          </div>
-          <div class="stats">
+        </div>
+        <div class="stats">
             <div id="stat1">
               <h2 class="color-primary">9 850</h2>
               <p>Happy patients</p>
@@ -80,8 +83,8 @@
               <h2 class="color-primary">24/7</h2>
               <p>Open clinic</p>
             </div>
-          </div>
         </div>
+      </div>
         <img src="img/placehold2.png" alt="">
     </div>
   </div>
@@ -90,9 +93,9 @@
 <!-- Services START -->
 
   <div class="grid-container">
-    <h2>Our Services</h2>
+    <h2 class="title-color">Our Services</h2>
     <div class="header-border"></div>
-    <div class="grid-wrapper">
+    <div class="grid-wrapper ">
       <a href="#" class="item">
         <div class="circle">
           <img src="img/tooth icon.svg" alt="">
@@ -142,7 +145,7 @@
   <!-- Appointment START -->
   <div id="appointment">
     <div class="container">
-      <h2>Do not wait and make an appointment today!</h2>
+      <h3>Do not wait and make an appointment today!</h3>
       <a href="#"><button class="btn-appointment">Book an appointment</button></a>
     </div>
   </div>
