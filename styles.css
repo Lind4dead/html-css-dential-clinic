@@ -14,7 +14,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -22,9 +22,6 @@
 }
 .border {
   border: 2px solid black;
-}
-html, body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 h1 {
  font-size: 3.75rem;
@@ -43,6 +40,7 @@ h1, h2, h3 {
 }
 p {
     font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
 }
 a {
   text-decoration: none;
@@ -61,6 +59,9 @@ li {
 .title-color {
   color: var(--title-color);
 }
+.text-color {
+  color: var(--text-color);
+}
 .pb-0 {
   padding-bottom: 0 !important;
 }
@@ -72,6 +73,9 @@ li {
 }
 .mb-5 {
   margin-bottom: 5rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
 }
 
 /* Top menu START */
@@ -90,21 +94,16 @@ li {
 .clock img {
   margin-right: .7rem;
 }
-.clock p {
-  color: #626262;
-}
 .social-media {
   display: flex;
   width: 10%;
   align-items: center;
   justify-content:space-between;
 }
-
 .social-media a {
   text-decoration: none;
   color: var(--blue-color) ;
 }
-
 .social-media a:hover {
   color: var(--green-color);
 }
@@ -136,7 +135,6 @@ li {
 
 /* Showcase START */
 #showcase {
-
   width: auto;
   height: auto;
   padding-top: 2rem;
@@ -144,9 +142,7 @@ li {
   justify-content: space-around;
   align-items: center;
   margin: auto;
- 
 }
-
 .infoCont {
   display: flex;
   width: auto;
@@ -162,54 +158,43 @@ li {
   width: auto;
   padding: 0 6rem;
   gap: 2rem;
-
 }
-
 .btn {
   padding: 1.1rem;
   border: 1px solid transparent;
   border-radius: 10px;
   cursor: pointer;
   width: 240px ;
-  
 }
 .btn-primary {
   background-color:var(--green-color) ;
   color: #FFFFFF;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 .btn:hover {
-  
   background-color: var(--blue-color) ;
-  width: 239px;
-  /* height: 60px; */
-  transition: width .2s, height .2s;
-  transition-timing-function: ease-in;
+  transition: background-color 0.3s;
+  transition-timing-function: ease-out;
 }
 /* Showcase END */
+
 /* About us START */
 .about-us-cont {
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-
 }
-
 .about-us {
   display: flex;
   width: 60%;
   height: 60%;
   flex-direction: column;
   justify-content: space-between;
- 
-  
 }
 .header-about {
   width: 70%;
-  
-
 }
 .header-border {
   border-bottom: 4px solid var(--green-color);
@@ -228,25 +213,15 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: auto;
+  width: 90%;
   height: auto;
-}
-#textMarg {
-  margin-bottom: 1rem;
 }
 .color-primary {
   color: var(--blue-color);
 }
-  #stat1 {
-    display: inline-block;
-  }
-  #stat2 {
-    display: inline-block;
-  }
-  #stat3 {
-    display: inline-block;
-  }
+
 /* About us END */
+
 /* Services START */
 .grid-container {
   background-color:var(--bg-color);
@@ -297,7 +272,7 @@ li {
   color: var(--text-color);
   margin: 0;
   font-size: 1.1rem;
-  width: 300px;
+  width: 45%;
 }
 .item h3 {
   color: var(--title-color) ;
@@ -327,7 +302,6 @@ li {
   border: 1px solid transparent;
   border-radius: 10px;
   cursor: pointer;
-  /* height: 58px; */
   width: 285px ;
   background-color: #FFF ;
   color: var(--blue-color-80-opacity);
@@ -359,13 +333,14 @@ li {
    justify-content: center;
    padding: 2rem;
  }
+ /* Footer END */
 
 
 
 
-/* MEDIA QUERIES START */
-/* MEDIA QUERIES START */
-/* MEDIA QUERIES START */
+/* MEDIA QUERIES START */ /* MEDIA QUERIES START */ /* MEDIA QUERIES START */
+
+
 
  
  
@@ -389,7 +364,7 @@ li {
 
    .clock {
      width: auto;
-  }
+    }
 
   /* Top-menu END */
  
@@ -398,7 +373,6 @@ li {
     }
 
     /* Showcase START */
-    
     #showcase {
       width: auto ;    
     }  
@@ -437,6 +411,7 @@ li {
     }
     .stats {
      margin: 1rem 0;
+     width: auto;
     }
     .text {
       margin-top: 1rem;
@@ -511,6 +486,12 @@ li {
     }
     .about-us-cont img {
       display: none;
+    }
+    .about-us {
+      padding: 0 1rem;
+    }
+    .stats {
+      width: 70%;
     }
     /* About us END */
     /* Services START */
@@ -622,9 +603,6 @@ li {
      }
      .text {
        margin-top: 1rem;
-     }
-     #textMarg {
-       margin-bottom: 1rem;
      }
      /* About us END */
      /* Services START */
