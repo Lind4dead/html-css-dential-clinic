@@ -77,7 +77,6 @@ li {
 .mb-1 {
   margin-bottom: 1rem;
 }
-
 /* Top menu START */
 #top-container {
   border: 1px solid #707070 ;
@@ -90,6 +89,7 @@ li {
 .clock {
   display: flex;
   width: 30%;
+  align-items: center;
 }
 .clock img {
   margin-right: .7rem;
@@ -115,9 +115,16 @@ li {
   padding: 3rem 0;
   display: flex;
   justify-content: space-between;
+  height: auto;
+}
+.navbar-cont {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .navbar {
-  width: 30%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -143,6 +150,13 @@ li {
   align-items: center;
   margin: auto;
 }
+.placeholder1 {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: start;
+  align-self: flex-end;
+}
 .infoCont {
   display: flex;
   width: auto;
@@ -158,6 +172,7 @@ li {
   width: auto;
   padding: 0 6rem;
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 .btn {
   padding: 1.1rem;
@@ -171,11 +186,10 @@ li {
   color: #FFFFFF;
   font-size: 1.1rem;
   font-weight: bold;
+  transition: background-color 0.3s ease-out;
 }
 .btn:hover {
   background-color: var(--blue-color) ;
-  transition: background-color 0.3s;
-  transition-timing-function: ease-out;
 }
 /* Showcase END */
 
@@ -188,8 +202,8 @@ li {
 }
 .about-us {
   display: flex;
-  width: 60%;
-  height: 60%;
+  width: 70%;
+  height: 70%;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -203,7 +217,7 @@ li {
 .stats {
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 100%;
 }
 .stats p {
   color: var(--title-color) ;
@@ -218,6 +232,13 @@ li {
 }
 .color-primary {
   color: var(--blue-color);
+}
+.placeholder2 {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  align-self: flex-end;
 }
 
 /* About us END */
@@ -255,6 +276,7 @@ li {
   align-items: center;
   text-align: center;
   padding: 1rem;
+  transition: box-shadow .3s ease-out;
   
 }
 .circle {
@@ -266,9 +288,9 @@ li {
   align-items: center;
   justify-content: center;
   margin-bottom: 2rem;
+  transition: background-color .3s ease-out, box-shadow .3s ease-out;
 }
 .item p {
-  
   color: var(--text-color);
   margin: 0;
   font-size: 1.1rem;
@@ -279,14 +301,12 @@ li {
 }
 .item:hover {
   box-shadow: 0 0 10px 1px #0000000a;
-  transition: box-shadow .3s;
-  transition-timing-function: ease-out;
+ 
 }
 .item:hover .circle {
   background-color: var(--blue-color);
   box-shadow: 0 0 1px 10px var(--blue-color-low-opacity);
-  transition: background-color .3s, box-shadow .3s;
-  transition-timing-function: ease-out;
+  
 }
   /* Services END */
 
@@ -307,6 +327,7 @@ li {
   color: var(--blue-color-80-opacity);
   font-size: 18px;
   font-weight: bold;
+  transition: background-color .2s ease-in-out, color .2s ease-in-out;
  }
  #appointment .container {
    justify-content: space-between;
@@ -319,8 +340,7 @@ li {
    border: 1px solid #fff;
    background-color: var(--blue-color-80-opacity);
    color: #fff;
-   transition: background-color .2s, color .2s;
-   transition-timing-function: ease-in-out;
+
  }
  /* Appointment END */
 
@@ -344,7 +364,7 @@ li {
 
  
  
- @media (max-width: 1399.98px) {
+@media (max-width: 1399.98px) {
    h1 {
      font-size: 3.4rem;
     }
@@ -358,7 +378,7 @@ li {
      font-size: 1rem;
    }
    .container {
-     width: 85%;
+     max-width: 1300px;
    }
    /* Top-menu START */
 
@@ -368,9 +388,9 @@ li {
 
   /* Top-menu END */
  
-   .navbar {
-     width: 40%;
-    }
+  /* .navbar-cont {
+    width: 40%;
+  } */
 
     /* Showcase START */
     #showcase {
@@ -411,7 +431,7 @@ li {
     }
     .stats {
      margin: 1rem 0;
-     width: auto;
+     width: 80%;
     }
     .text {
       margin-top: 1rem;
@@ -434,9 +454,17 @@ li {
     }
     /* Appointment END */
   }
+@media (max-width:1200px) {
+  .placeholder1 img{
+    width: 100%;
+    /* display: ; */
+  }
+  .stats {
+    min-width: 100%;
+  }
+}
 
-
- @media (max-width: 992px) {
+@media (max-width: 992px) {
    h1 {
      font-size: 2.5rem;
     }
@@ -450,19 +478,24 @@ li {
      font-size: 1rem;
    }
    .container {
-     width: 90%;
+     max-width: 960px;
    }
 
     /*Main Menu START  */
+    .navbar-cont {
+      width: 90%;
+    }
     .navbar {
-     width: 50%;
      justify-content: space-around;
     }
     /* Main Menu END */
     /* Showcase START */
-    .bg-ph-color {
+    /* .bg-ph-color {
       background-image: url(img/placehold1.png);
       background-repeat: no-repeat;
+    } */
+    .placeholder1 {
+      display: none;
     }
     #showcase {
      padding: 3rem 0;
@@ -479,8 +512,8 @@ li {
     
     /* About us START */
     .about-us-cont {
-      background-image: url(img/placehold2.png);
-      background-repeat: no-repeat;
+      /* background-image: url(img/placehold2.png);
+      background-repeat: no-repeat; */
       height: auto;
       padding: 2rem 0;
     }
@@ -492,6 +525,9 @@ li {
     }
     .stats {
       width: 70%;
+    }
+    .placeholder2 {
+      display: none;
     }
     /* About us END */
     /* Services START */
@@ -525,20 +561,39 @@ li {
    p {
      font-size: .9rem;
    }
+   .d-flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    
+   }
    /* Top-menu START */
- 
+   .clock {
+     width: 80%;
+   }
+   .social-media {
+     width: 20%;
+   }
   /* Top-menu END */
    .main-menu {
      padding: 2rem 0;
     flex-direction: column;
     align-items: center;
   }
+  .navbar-cont {
+    width: 100%;
+    position: sticky;
+    top:0;
+    height: 90px;
+    align-self: center;
+  }
    .navbar {
      width: 100%;
      justify-content: space-between;
-     padding-top: 2rem;
-    }
+     align-items: center;
 
+    }
 
   
 
@@ -568,10 +623,15 @@ li {
     .top-menu {
       justify-content: space-around;
       align-items: center;
+      padding: 0 .4rem;
     }
-   .social-media {
+    .social-media {
      width: 20%;
-   }
+    }
+    .clock img {
+      display: none;
+    }
+
    /* Top-menu END */
    /* Main menu START */
     .main-menu {
@@ -590,11 +650,6 @@ li {
      /* Showcase END */
  
      /* About us START */
-     .about-us-cont {
-       background-image: url(img/placehold2.png);
-       background-repeat: no-repeat;
-      
-     }
       .header-about {
        width: 100%;
        margin-bottom: 1rem;     
